@@ -14,9 +14,13 @@ export function Hero() {
     <section className="relative h-screen flex flex-col justify-end overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="/images/hero.jpg"
-          alt="Zachte pastel stationery en selfcare producten op een clean bureau"
+        <video
+          src="/images/hero-video.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/images/hero.jpg"
           className={`w-full h-full object-cover transition-transform duration-[2s] ease-out ${
             visible ? "scale-100" : "scale-110"
           }`}
